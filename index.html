@@ -41,7 +41,7 @@
 
             //І є можливість отримати вік студента та його середній бал – це методи.
             getAge() {
-                return 2023 - this.birth;
+                return new Date().getFullYear() - this.birth;
             }
 
             getAverageRate() {

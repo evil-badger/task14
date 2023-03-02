@@ -29,13 +29,13 @@
             //Передбачте будь - який захист від того, щоб у масиві відвідуваності не могло бути більше 25 записів.
             present() {
                 if (this.stat.length < 25) {
-                    return this.stat.unshift(true);
+                    return this.stat.push(true);
                 }
             }
 
             absent() {
                 if (this.stat.length < 25) {
-                    return this.stat.unshift(false);
+                    return this.stat.push(false);
                 }
             }
 
